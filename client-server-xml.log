@@ -1,0 +1,152 @@
+#Request0: the url:http://localhost:6902/ws/people?wsdl
+#Request0:fill the data base
+
+#Request1:read person p identified by 1 
+
+person id:1
+person firstname:mario
+person lastname:marco
+person birthday:17-02-1978
+
+#Request2:get the list of people  
+
+person id:1
+person firstname:mario
+person lastname:marco
+person birthday:17-02-1978
+
+
+
+person id:2
+person firstname:john
+person lastname:john
+person birthday:11-12-1988
+
+
+
+person id:3
+person firstname:marc
+person lastname:marc
+person birthday:18-09-1958
+
+
+
+person id:4
+person firstname:paul
+person lastname:paul
+person birthday:19-07-1968
+
+
+
+person id:5
+person firstname:esther
+person lastname:esther
+person birthday:20-10-1990
+
+
+
+#Request3:add person p 
+
+Result==> the new created person with id:6 
+
+person id:0
+person firstname:Mario
+person lastname:Marco
+person birthday:12-12-2012
+
+#Request4:update person p 
+
+2 
+
+#Request5:delete person p 
+
+Result ==> 0 
+
+#Request6:read person preference identified by id:1 and activity_type:sport
+idActivity:1
+name:swimming
+description:friends competition
+place:Trento city
+startdate:2017-09-13T12:00:00.0
+activity type:sport
+
+
+
+idActivity:2
+name:football
+description:final
+place:sanbartolameo
+startdate:2017-09-13T19:00:00.0
+activity type:sport
+
+
+
+#Request7:return the list of all preferences
+idActivity:1
+name:swimming
+description:friends competition
+place:Trento city
+startdate:2017-09-13T12:00:00.0
+activity type:sport
+
+
+
+idActivity:2
+name:football
+description:final
+place:sanbartolameo
+startdate:2017-09-13T19:00:00.0
+activity type:sport
+
+
+
+idActivity:3
+name:swimming
+description:competition 2017
+place:Trento city
+startdate:2017-09-13T12:00:00.0
+activity type:sport
+
+
+
+idActivity:4
+name:football
+description:calcio amicale
+place:sanbartolameo
+startdate:2017-09-13T19:00:00.0
+activity type:sport
+
+
+
+idActivity:5
+name:discussion
+description:social media
+place:sanbartolameo
+startdate:2017-09-13T20:00:00.0
+activity type:social
+
+
+
+idActivity:6
+name:economics
+description:innovation and management
+place:povo
+startdate:2017-09-13T9:00:00.0
+activity type:school
+
+
+
+#Request8:return the value identified by {activity_id :1} for a Person identified by {id :1}
+idActivity:4
+name:football
+description:calcio amicale
+place:sanbartolameo
+startdate:2017-09-13T19:00:00.0
+activity type:sport
+
+
+
+#Request9:should save a new activity object {activity} of a Person identified by {id}
+Result ==> the saved activity with id_activity:7
+#Request10:should update the activity identified with {activity,id}, related to the Person identified by {id
+Result ==> the updated activity with id_activity:2
