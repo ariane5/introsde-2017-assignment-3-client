@@ -91,7 +91,7 @@
         </target>
        
     	
-    	<target name="client" depends="compile">
+    	<target name="execute.client" depends="compile">
           	            <echo message="app start introsde.document.client.PeopleClient in ${build.dir}" />
           	            <java classname="introsde.document.client.PeopleClient" classpath="${build.dir}" fork="true">
           	                <arg value="$JAVA_OPTS  -cp" />
@@ -106,7 +106,7 @@
           	  </target>
 
       	
-        <target name="create.war" depends="compile">
+        <target name="assign3Client.war" depends="compile">
             <war destfile="assign3Client.war" webxml="${web.dir}/WebContent/WEB-INF/web.xml">
                 <fileset dir="${web.dir}/WebContent">
                     <include name="**/*.*" />
